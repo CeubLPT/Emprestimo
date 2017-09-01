@@ -32,7 +32,15 @@ public abstract class Pessoa {
         return emprestimos;
     }
     
-    
+    public String emprestimos(){
+        String txt = "";
+        
+        for (Emprestimo e:emprestimos)
+            txt += e + "\n";
+        
+        return txt;
+        
+    }
     public abstract boolean validaId();
    
 }

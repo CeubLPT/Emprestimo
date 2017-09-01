@@ -44,5 +44,9 @@ public class Livro {
         this.editora = editora;
     }
     
+    public String toString(){
+        return titulo + " ";
+    }
+    
     
 }

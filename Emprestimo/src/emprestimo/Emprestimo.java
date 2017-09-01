@@ -51,5 +51,15 @@ public class Emprestimo {
         Emprestimo e = new Emprestimo(null);
         System.out.println(e.getData());
     }
+    
+    public String toString(){
+        SimpleDateFormat format = new SimpleDateFormat( "dd/MM/yyyy");
+        String txt = livro + " emprestado em " + format.format(data);
+        if (!emAberto){
+            txt += " devolvido em " + format.format(dataDevolucao);
+        }
+            
+        return txt;
+    }
 
 }
