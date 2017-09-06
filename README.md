@@ -13,8 +13,8 @@ Você deverá implementar o seguinte modelo:
 Implemente as classes e os métodos acessores. Nâo existem grandes complicações.
 
 Vamos observar o relacionamento entre `Pessoa` e `Emprestimo`:
-1. `Pessoa` tem n `Livro`, então você deverá implementar o relacionamento como uma coleção. 
-2. `Livro` tem uma `Pessoa`, então o relacionamento será feito pelo atributo `Pessoa pessoa`.
+1. `Pessoa` tem n `Emprestimo`, então você deverá implementar o relacionamento como uma coleção. 
+2. `Emprestimo` tem uma `Pessoa`, então o relacionamento será feito pelo atributo `Pessoa pessoa`.
 
 Este é um relacionamento de dupla navegabilidade, então, quando um livro for emprestado ambos os lados deverão ser mantidos. Como isso será feito?
 O método `empresta(Livro livro)` da classe `Pessoa` deverá:
