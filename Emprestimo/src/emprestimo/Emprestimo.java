@@ -19,10 +19,12 @@ public class Emprestimo {
     private Date dataDevolucao;
     private boolean emAberto;
     private Livro livro;
+    private Pessoa pessoa;
     
-    public Emprestimo(Livro l){
+    public void empresta(Pessoa pessoa, Livro l){
         this.livro = l;
         this.data = new Date();
+        this.pessoa = pessoa;
         emAberto = true;
     }
     
@@ -30,6 +32,16 @@ public class Emprestimo {
         emAberto = false;
         dataDevolucao = new Date();
     }
+
+    public Pessoa getPessoa() {
+        return pessoa;
+    }
+
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
+    
+    
 
     public Date getData() {
         return data;
@@ -45,11 +57,6 @@ public class Emprestimo {
 
     public Livro getLivro() {
         return livro;
-    }
-
-    public static void main(String[] args) {
-        Emprestimo e = new Emprestimo(null);
-        System.out.println(e.getData());
     }
     
     public String toString(){

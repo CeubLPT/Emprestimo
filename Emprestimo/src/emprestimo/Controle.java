@@ -10,7 +10,7 @@ package emprestimo;
  * @author Alexandre.Torres
  */
 public class Controle {
-    public static void main(String[] args) {
+    public static void main(String... args) {
         
         Pessoa p = new PessoaFisica("Antonio", "89647895931");
         

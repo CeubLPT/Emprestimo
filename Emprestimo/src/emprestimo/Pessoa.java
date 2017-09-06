@@ -22,8 +22,11 @@ public abstract class Pessoa {
     }
 
     public void empresta(Livro l){
-        emprestimos.add( new Emprestimo(l));
+        Emprestimo e = new Emprestimo();
+        e.empresta(this, l);
+        emprestimos.add( e );
     }
+    
     public String getNome() {
         return nome;
     }
