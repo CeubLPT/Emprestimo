@@ -5,8 +5,7 @@ Você deverá implementar o seguinte modelo:
 
 **Atenção: não implementar as classes `PessoaFisica` e `PessoaJuridica` até ter visto a matéria de herança**
 
-
-![emprestimo 1](https://user-images.githubusercontent.com/20231710/30089356-9a7d03f0-9282-11e7-91ac-10fccbe08198.png)
+![emprestimo 2](https://user-images.githubusercontent.com/20231710/30089721-e9115e4c-9284-11e7-9ff0-f01467feedd1.png)
 
 ## Fase 1
 
